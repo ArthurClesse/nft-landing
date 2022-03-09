@@ -2,8 +2,27 @@
 
 {% block content %}
 
-    {% include 'components/molecules/navigation.twig' %}
 
-    <h1>Home</h1>
+    <div class="content">
+        <div class="left">
+            <h2>Top NFT</h2>
+
+        </div>
+        <div class="right">
+            <h2>Rare NFT</h2>
+            <div class="right__grid">
+                {% import 'components/molecules/card.twig' as macro %}
+                {{ macro.card("nft-5.gif", "owner-1.jpeg", "creator-4.png") }}
+                {% import 'components/molecules/card.twig' as macro %}
+                {{ macro.card("nft-4.png", "owner-2.jpeg", "creator-3.gif") }}
+                {% import 'components/molecules/card.twig' as macro %}
+                {{ macro.card("nft-2.jpg","owner-3.jpeg", "creator-2.jpg") }}
+                {% import 'components/molecules/card.twig' as macro %}
+                {{ macro.card("hand.gif", "owner-4.jpeg", "creator-1.png") }}
+            </div>
+        </div>
+    </div>
+
+    {% include 'components/molecules/navigation.twig' %}
 
 {% endblock %}

@@ -1,23 +1,147 @@
 @import "../../variables/colors";
+@import "../../variables/breakpoints";
 
 .navigation {
+
+  position: sticky;
+  bottom: 16px;
+  margin: 0 auto;
+  width: 90%;
+  background-color: white;
+  border-radius: 50px;
+  z-index: 1000;
+  
+  @media (min-width: $breakpoint-mobile) {
+    position: relative;
+    transform: none;
+    left: auto;
+    bottom: auto;
+    border-radius: 0;
+    padding: 0;
+    width: auto;
+  }
 
   &__list {
 
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    @media (min-width: $breakpoint-mobile) {
+      flex-direction: column;
+    }
 
   }
   &__el {
+    margin: 8px 0;
+    position: relative;
 
-    padding: 20px;
+    &.shop {
 
-    & a {
+      background-color: white;
+      box-shadow: -2px 24px 49px -4px rgba(0,0,0,0.1);
+      transform: translatey(-20px);
+      border-radius: 16px;
 
-      color: $secondary;
-      text-decoration: none;
-      font-family: sans-serif;
+
+      @media (min-width: $breakpoint-mobile) {
+
+        box-shadow: none;
+        transform: none;
+        border-radius: 0;
+
+      }
+
+    }
+
+    a {
+
+      padding: 16px 20px;
+      display: block;
+
+
+      @media (min-width: $breakpoint-mobile) {
+
+        padding: 16px 32px;
+      }
+
+      svg {
+
+        path {
+
+          stroke: $primary;
+
+        }
+
+      }
+
+    }
+    &.active {
+
+      svg {
+
+        path {
+
+          stroke: $dark;
+
+        }
+
+      }
+    }
+
+    @media (min-width: $breakpoint-mobile) {
+
+
+      &.active {
+
+        svg {
+
+          path {
+
+            stroke: $dark;
+
+          }
+
+        }
+
+        &::after {
+
+          content: '';
+          display: block;
+          width: 5px;
+          height: 100%;
+          background-color: black;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          border-top-right-radius: 8px;
+          border-bottom-right-radius: 8px;
+
+        }
+
+      }
+
+    }
+
+    .badge {
+
+      display: block;
+      background-color: #FD0280;
+      color: white;
+      padding: 6px 8px;
+      border-radius: 16px;
+      font-size: 10px;
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: -2px 28px 52px 7px rgba(253,2,127,0.6);
+
 
     }
 

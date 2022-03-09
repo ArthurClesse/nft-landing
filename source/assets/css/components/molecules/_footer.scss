@@ -1,0 +1,24 @@
+.footer {
+
+  display: none;
+
+  @media (min-width: $breakpoint-mobile) {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+  }
+
+  &__left {
+
+    display: flex;
+
+  }
+
+  &__settings {
+
+    display: block;
+    padding: 8px 32px;
+
+  }
+
+}

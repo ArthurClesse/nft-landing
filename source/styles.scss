@@ -1,13 +1,19 @@
 //Styles
 //Base
 @import "assets/css/styles/base/base";
+@import "assets/css/styles/base/content";
 //Pages
 
 //Variables
 @import "assets/css/variables/colors";
+@import "assets/css/variables/breakpoints";
 
 //Components
 //Atoms
+@import "assets/css/components/atoms/logo";
 //Molecules
 @import "assets/css/components/molecules/navigation";
+@import "assets/css/components/molecules/footer";
+@import "assets/css/components/molecules/header";
+@import "assets/css/components/molecules/card";
 //Organisms

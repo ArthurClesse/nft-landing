@@ -57,8 +57,8 @@ module.exports = {
             template: './source/index.twig'
         }),
         new HtmlWebpackPlugin({
-            filename: 'about.html',
-            template: './source/pages/about.twig'
+            filename: 'shop.html',
+            template: './source/pages/shop.twig'
         }),
         new CopyPlugin({
             patterns: [
