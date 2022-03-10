@@ -1,0 +1,49 @@
+.nft {
+
+  width: 400px;
+  margin: 0 auto;
+
+  &__hero {
+
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__grandparent {
+
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    border: 6px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  &__parent {
+
+    width: 352px;
+    height: 352px;
+    border-radius: 50%;
+    border: 4px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  &__child {
+
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 4px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+
+
+}

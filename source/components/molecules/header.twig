@@ -1,3 +1,28 @@
 <header class="header">
-    {% include '../atoms/logo.twig' %}
+    <div class="header__left">
+        {% include '../atoms/logo.twig' %}
+        {% include '../atoms/search.twig' %}
+    </div>
+
+    <div class="header__right">
+        {% include '../molecules/tabs.twig' %}
+
+        <div class="header__notif">
+            <a class="btn-message" href="">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 8C2 4 4 2 8 2H16C20 2 22 4 22 8V13C22 17 20 19 16 19H15.5C15.19 19 14.89 19.15 14.7 19.4L13.2 21.4C12.54 22.28 11.46 22.28 10.8 21.4L9.3 19.4C9.14 19.18 8.77 19 8.5 19H8C4 19 2 18 2 13V12" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.9965 11H16.0054" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M11.9945 11H12.0035" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.99451 11H8.00349" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <a class="btn-message" href="">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 6.43994V9.76994" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                    <path d="M20.5894 15.17C21.3194 16.39 20.7394 17.97 19.3894 18.42C14.6094 20.01 9.43944 20.01 4.65944 18.42C3.21944 17.94 2.66944 16.48 3.45944 15.17L4.72944 13.05C5.07944 12.47 5.35944 11.44 5.35944 10.77V8.67C5.35944 4.98 8.33944 2 12.0194 2C15.6794 2 18.6794 5 18.6794 8.66V10.76C18.6794 10.94 18.6994 11.14 18.7294 11.35" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                    <path d="M15.3299 18.8201C15.3299 20.6501 13.8299 22.1501 11.9999 22.1501C11.0899 22.1501 10.2499 21.7701 9.64992 21.1701C9.04992 20.5701 8.66992 19.7301 8.66992 18.8201" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"/>
+                </svg>
+            </a>
+        </div>
+    </div>
 </header>

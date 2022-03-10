@@ -1,5 +1,58 @@
+@import "../../variables/colors";
+@import "../../variables/breakpoints";
+
 .header {
 
-  padding: 22px 28px;
+  padding: 24px 16px 0 24px;
+  display: block;
+
+  @media (min-width: $breakpoint-mobile) {
+
+    display: flex;
+    align-items: center;
+    padding: 16px 28px 16px 60px;
+
+  }
+
+  &__left {
+
+    display: flex;
+    justify-content: space-between;
+
+  }
+  &__right {
+
+    display: block;
+
+    @media (min-width: $breakpoint-mobile) {
+
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+
+  }
+
+  &__notif {
+
+    display: none;
+
+    @media (min-width: $breakpoint-mobile) {
+
+      display: flex;
+
+    }
+
+    .btn-message {
+
+      display: block;
+      margin-right: 16px;
+
+    }
+
+  }
+
 
 }

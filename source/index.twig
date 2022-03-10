@@ -6,7 +6,8 @@
     <div class="content">
         <div class="left">
             <h2>Top NFT</h2>
-
+            {% import 'components/molecules/highlight-nft.twig' as macro %}
+            {{ macro.nft("9.8", "Legend") }}
         </div>
         <div class="right">
             <h2>Rare NFT</h2>

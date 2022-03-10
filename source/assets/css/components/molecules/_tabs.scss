@@ -1,0 +1,42 @@
+@import "../../variables/colors";
+@import "../../variables/breakpoints";
+
+.tabs {
+  display: flex;
+  list-style: none;
+  padding: 16px 0;
+  overflow: auto;
+  margin: 16px 0 0 0;
+  gap: 16px;
+
+  @media (min-width: $breakpoint-mobile) {
+
+    box-shadow: 0px 26px 65px 55px rgba(249,249,250,1);
+    background-color: #F8F9F9;
+    margin: 0;
+
+  }
+
+
+  &__el {
+
+  }
+  &__link {
+
+    text-decoration: none;
+    color: black;
+    background-color: rgba(#E5ECEE, .5);
+    border-radius: 32px;
+    border: 2px solid white;
+    padding: 8px 16px;
+
+    &.active {
+
+      background-color: $dark;
+      border-color: $dark;
+      color: white;
+
+    }
+
+  }
+}
