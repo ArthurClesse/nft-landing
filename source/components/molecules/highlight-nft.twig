@@ -1,21 +1,34 @@
-{% macro nft(lvl, type) %}
+{% macro nft(lvl, type, name, price, img, user, number) %}
     <div class="nft">
         <div class="nft__hero">
             <div class="nft__rarity">
-                <div>Rarity lvl</div>
-                <div>{{ lvl }}</div>
+                <div class="nft__rarityTitle">Rarity lvl</div>
+                <div class="nft__rarityLvl">
+                    {{ lvl }}
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.6806 13.9783L15.4706 10.7683L13.5106 8.79828C12.6806 7.96828 11.3306 7.96828 10.5006 8.79828L5.32056 13.9783C4.64056 14.6583 5.13056 15.8183 6.08056 15.8183H11.6906H17.9206C18.8806 15.8183 19.3606 14.6583 18.6806 13.9783Z" fill="#292D32"/>
+                    </svg>
+                </div>
             </div>
             <div class="nft__type">
-                <div>NFT type</div>
+                <div class="nft__typeTitle">NFT type</div>
                 <div>{{ type }}</div>
             </div>
         </div>
         <div class="nft__grandparent">
             <div class="nft__parent">
                 <div class="nft__child">
-
+                    <span class="user">
+                        <img src="assets/media/{{ user }}" alt="">
+                    </span>
+                    <div class="nft__nft">
+                        <img src="{{ img }}" alt="">
+                    </div>
+                    <span class="number">{{ number }}</span>
                 </div>
             </div>
         </div>
+        <h2 class="nft__name">{{ name }}</h2>
+        <h3 class="nft__price">{{ price }}</h3>
     </div>
 {% endmacro %}

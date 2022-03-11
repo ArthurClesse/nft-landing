@@ -70,6 +70,7 @@
 
       padding: 16px 20px;
       display: block;
+      transition: all .35s ease-in-out;
 
 
       @media (min-width: $breakpoint-mobile) {
@@ -129,6 +130,7 @@
           transform: translateY(-50%);
           border-top-right-radius: 8px;
           border-bottom-right-radius: 8px;
+          transition: all .35s ease-in-out;
 
         }
 
